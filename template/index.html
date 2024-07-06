@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/banners/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Sirin+Stencil&display=swap"   rel="stylesheet"/>
+
+    <title>Ascii-art-web Stylize</title>
+  </head>
+  <body style="background-image: url(banners/style/backgr.jpg);">
+
+    <div class="navbar">
+      <h1></h1>
+      <h1>ASCII-ART WEB</h1>
+      <marquee direction="rigth" width="100" height="250" behavior="alternate">
+        <img src="/banners/style/logo_go .png" alt="logo_go" />
+      </marquee>
+    </div>
+
+    <div class="asciibox">
+      <h2>EXPRIMEZ VOTRE IMAGINATION !!!</h2>
+      <div class="Font">
+        <form method="post" action="/">
+
+          <div class="button">
+
+            <label for="standard">Standard</label> 
+            <input type="radio" value="standard" name="banner" id="standard" />
+
+            <label for="shadow">Shadow</label>
+            <input type="radio" value="shadow" name="banner" id="shadow" />
+
+            <label for="thinkertoy">Thinkertoy</label>
+            <input type="radio"value="thinkertoy" name="banner"id="thinkertoy" />
+          </div>
+          <div class="inputb">
+           
+
+            <textarea class="select" name="character" placeholder="Entrez une valeur ici" cols="30"rows="2"> </textarea>
+           
+            <label for ="voir">voir</label>
+            <input  type="radio" value="voir" name="execution" id="voir" >
+
+           
+            <label  for ="telecharger">Telecharger</label>
+            <input type="radio" value="telecharger" name="execution" id="telecharger" >
+            
+            <input class="select" type="submit" value="Styliser" />
+    
+          </div>
+        </form>
+
+        <div class="resultat">
+          <pre>{{.}}</pre>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>DigiFemmes Academy - by @obintou @skaridja @bballaki</p>
+    </div>
+  </body>
+</html>
